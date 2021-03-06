@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+
+  <body>
+     <h1>Enter data : </h1>
+    <form method="POST" action = "/send_data">
+      <div class = "form-group">
+
+        <label>ID : </label><input type="text" name = "id1" pattern="[0-9]{3,}" title="101,102" required> <br>
+        <label>First Name : </label><input type="text" name = "fname" pattern="[A-Za-z]{3,}" title="Like Aditya,Omkar" required> <br>
+        <label>Last Name : </label><input type="text" name = "lname" pattern="[A-Za-z]{3,}" title="Like Aditya,Omkar" required> <br>
+        <label>Mobile : </label><input type="text" name = "mb" pattern="[0-9]{10}" title="1234567890" required> <br>
+        <label>Email : </label> <input type="text" name = "email" required pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </div>
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
